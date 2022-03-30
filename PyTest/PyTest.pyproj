@@ -4,16 +4,17 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f0ed16d1-f72e-4113-9974-2e47b5732391</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>E:\Project\PythonLessons\PyTest\PyTest\tests\test_something.py</StartupFile>
     <SearchPath>
     </SearchPath>
-    <WorkingDirectory>.</WorkingDirectory>
+    <WorkingDirectory>
+    </WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PyTest</Name>
     <RootNamespace>PyTest</RootNamespace>
     <InterpreterId>Global|PythonCore|3.10</InterpreterId>
     <TestFramework>Pytest</TestFramework>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,6 +39,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="tests\something_test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\test_something.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
