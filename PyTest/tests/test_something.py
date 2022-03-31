@@ -1,8 +1,7 @@
-import requests
 from pydantic import BaseModel, validator
 from enum import Enum
 
-SERVICE_URL = 'https://gorest.co.in/public/v1/users'
+
 
 #response = requests.get(SERVICE_URL)
 
@@ -66,7 +65,9 @@ class Response:
             f"Response body: {self.response_json}"
             
 
-def test_getting_users_list():
-    response = requests.get(SERVICE_URL)
-    test_object = Response(response)
-    test_object.assert_status_code(200).validate(User)
+def test_getting_users_list(get_users):    
+    Response(get_users).assert_status_code(200).validate(User)
+   
+
+def test_another():
+    assert 1 == 1

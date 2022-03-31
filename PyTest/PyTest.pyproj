@@ -31,6 +31,9 @@
     <Folder Include="tests\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="tests\conftest.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="tests\jsonschema_test.py" />
     <Compile Include="tests\posts_test.py">
       <SubType>Code</SubType>
