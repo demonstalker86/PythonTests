@@ -65,9 +65,11 @@ class Response:
             f"Response body: {self.response_json}"
             
 
-def test_getting_users_list(get_users):    
+def test_getting_users_list(get_users, calculate, make_number):    
     Response(get_users).assert_status_code(200).validate(User)
-   
+    print(calculate)
+    print(calculate(1,1))
+    print(make_number)
 
 def test_another():
     assert 1 == 1
